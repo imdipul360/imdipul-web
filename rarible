@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://rarible.com/favicon.png?fdf5c026eb2c2078ffca">
+    <script defer="defer" src="https://rarible.com/main.dae8c7752fdc706a3c2c.js?fdf5c026eb2c2078ffca"></script>
+</head>
+<body>
+    <div id="root">
+        <script type="text/javascript">
+        window.VERSION = "0.77.1";
+        window.ENVIRONMENT = "prod";
+        </script>
+</body>
+</html>
+
+
