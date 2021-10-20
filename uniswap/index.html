@@ -1,0 +1,315 @@
+<!doctype html>
+<html translate="no">
+<head>
+    <meta charset="utf-8"/>
+    <title>Uniswap Interface</title>
+    <meta name="description" content="Swap or provide liquidity on the Uniswap Protocol"/>
+    <link rel="shortcut icon" type="image/png" href="https://app.uniswap.org/favicon.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="https://app.uniswap.org/images/192x192_App_Icon.png"/>
+    <link rel="apple-touch-icon" sizes="512x512" href="https://app.uniswap.org/images/512x512_App_Icon.png"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="theme-color" content="#ff007a"/>
+    <meta name="fortmatic-site-verification" content="j93LgcVZk79qcgyo"/>
+    <link rel="manifest" href="https://app.uniswap.org/manifest.json"/>
+    <link rel="preconnect" href="https://www.google-analytics.com/">
+    <link rel="preload" href="https://app.uniswap.org/fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+    * {
+        font-family: Inter, sans-serif;
+        box-sizing:border-box
+    }
+
+    @font-face {
+        font-family: 'Inter custom';
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+        font-named-instance: Regular;
+        src: url(fonts/Inter-roman.var.woff2) format("woff2 supports variations(gvar)"), url(fonts/Inter-roman.var.woff2) format("woff2-variations"), url(fonts/Inter-roman.var.woff2) format("woff2")
+    }
+
+    @supports (font-variation-settings: normal) {
+        * {
+            font-family: 'Inter custom', sans-serif
+        }
+    }
+
+    body, html {
+        margin: 0;
+        padding:0
+    }
+
+    button {
+        user-select:none
+    }
+
+    html {
+        font-size: 16px;
+        font-variant: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on
+    }
+
+    #background-radial-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        width: 200vw;
+        height: 200vh;
+        background: radial-gradient(50% 50% at 50% 50%, #fc077d10 0, rgba(255, 255, 255, 0) 100%);
+        transform: translate(-50vw, -100vh);
+        z-index:-1
+    }
+
+    html {
+        min-height:100%
+    }
+
+    @media (prefers-color-scheme: dark) {
+        html {
+            background-color:#212429
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        html {
+            background-color: #f7f8fa
+        }
+    }
+    </style>
+    <link href="https://app.uniswap.org/static/css/35.83e03661.chunk.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div>&emsp;</div>
+    </div>
+    <div id="background-radial-gradient"></div>
+    <script>
+    !function(e) {
+        function r(r) {
+            for (var n, c, o = r[0], u = r[1], i = r[2], b = 0, l = []; b < o.length; b++)
+                c = o[b],
+                Object.prototype.hasOwnProperty.call(a, c) && a[c] && l.push(a[c][0]),
+                a[c] = 0;
+            for (n in u)
+                Object.prototype.hasOwnProperty.call(u, n) && (e[n] = u[n]);
+            for (d && d(r); l.length;)
+                l.shift()();
+            return f.push.apply(f, i || []), t()
+        }
+        function t() {
+            for (var e, r = 0; r < f.length; r++) {
+                for (var t = f[r], n = !0, o = 1; o < t.length; o++) {
+                    var u = t[o];
+                    0 !== a[u] && (n = !1)
+                }
+                n && (f.splice(r--, 1), e = c(c.s = t[0]))
+            }
+            return e
+        }
+        var n = {},
+            a = {
+                34: 0
+            },
+            f = [];
+        function c(r) {
+            if (n[r])
+                return n[r].exports;
+            var t = n[r] = {
+                i: r,
+                l: !1,
+                exports: {}
+            };
+            return e[r].call(t.exports, t, t.exports, c), t.l = !0, t.exports
+        }
+        c.e = function(e) {
+            var r = [],
+                t = a[e];
+            if (0 !== t)
+                if (t)
+                    r.push(t[2]);
+                else {
+                    var n = new Promise((function(r, n) {
+                        t = a[e] = [r, n]
+                    }));
+                    r.push(t[2] = n);
+                    var f,
+                        o = document.createElement("script");
+                    o.charset = "utf-8",
+                    o.timeout = 120,
+                    c.nc && o.setAttribute("nonce", c.nc),
+                    o.src = function(e) {
+                        return c.p + "static/js/" + ({}[e] || e) + "." + {
+                            0: "bf40eeb0",
+                            1: "64dcd5fb",
+                            2: "85dbc677",
+                            3: "821fce13",
+                            4: "221f6b42",
+                            5: "8031dfeb",
+                            6: "90c58cf3",
+                            7: "a379a59f",
+                            8: "bc978b58",
+                            9: "067ce772",
+                            10: "763b4840",
+                            11: "5719f3a1",
+                            12: "22e9e3b2",
+                            13: "41957672",
+                            14: "ff825941",
+                            15: "644aba28",
+                            16: "4ca1e96d",
+                            17: "ab091e08",
+                            18: "035486e9",
+                            19: "21d8d369",
+                            20: "30c190a3",
+                            21: "95a6dd1f",
+                            22: "b337ab90",
+                            23: "b0cd77a5",
+                            24: "f4ecb1f5",
+                            25: "db59d56f",
+                            26: "daf4e3e4",
+                            27: "7ffa1d68",
+                            28: "96d097af",
+                            29: "e7507f7e",
+                            30: "c102a002",
+                            31: "0b522409",
+                            32: "a2d9ae77",
+                            36: "7fef2300",
+                            37: "9d886f94",
+                            38: "6b149241",
+                            39: "d2ec78e0",
+                            40: "ea319ac4",
+                            41: "5ef181e4",
+                            42: "56b00e4d",
+                            43: "f4279cd0",
+                            44: "f0b5e4ef",
+                            45: "adcde02b",
+                            46: "e8d4600a",
+                            47: "a699e6cb",
+                            48: "86d7c2ae",
+                            49: "c40f85f8",
+                            50: "61d01ae7",
+                            51: "ce5a7f5f",
+                            52: "5345b756",
+                            53: "72a976c1",
+                            54: "4096f4c0",
+                            55: "9f16b742",
+                            56: "90f5ee3b",
+                            57: "8378bc92",
+                            58: "f9a11256",
+                            59: "472c5c9d",
+                            60: "f8062bcf",
+                            61: "9968df50",
+                            62: "8d37278c",
+                            63: "966a45bb",
+                            64: "75a45fdb",
+                            65: "348ebc80",
+                            66: "eae6b6b3",
+                            67: "b598d667",
+                            68: "e561953a",
+                            69: "355c95bf",
+                            70: "b9cabd7a",
+                            71: "96952abc",
+                            72: "d3e5e2b3",
+                            73: "a7d0f32f",
+                            74: "5b72c5f0",
+                            75: "6cac0f10",
+                            76: "9c860503",
+                            77: "cefb0a12"
+                        }[e] + ".chunk.js"
+                    }(e);
+                    var u = new Error;
+                    f = function(r) {
+                        o.onerror = o.onload = null,
+                        clearTimeout(i);
+                        var t = a[e];
+                        if (0 !== t) {
+                            if (t) {
+                                var n = r && ("load" === r.type ? "missing" : r.type),
+                                    f = r && r.target && r.target.src;
+                                u.message = "Loading chunk " + e + " failed.\n(" + n + ": " + f + ")",
+                                u.name = "ChunkLoadError",
+                                u.type = n,
+                                u.request = f,
+                                t[1](u)
+                            }
+                            a[e] = void 0
+                        }
+                    };
+                    var i = setTimeout((function() {
+                        f({
+                            type: "timeout",
+                            target: o
+                        })
+                    }), 12e4);
+                    o.onerror = o.onload = f,
+                    document.head.appendChild(o)
+                }
+            return Promise.all(r)
+        },
+        c.m = e,
+        c.c = n,
+        c.d = function(e, r, t) {
+            c.o(e, r) || Object.defineProperty(e, r, {
+                enumerable: !0,
+                get: t
+            })
+        },
+        c.r = function(e) {
+            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                value: "Module"
+            }),
+            Object.defineProperty(e, "__esModule", {
+                value: !0
+            })
+        },
+        c.t = function(e, r) {
+            if (1 & r && (e = c(e)), 8 & r)
+                return e;
+            if (4 & r && "object" == typeof e && e && e.__esModule)
+                return e;
+            var t = Object.create(null);
+            if (c.r(t), Object.defineProperty(t, "default", {
+                enumerable: !0,
+                value: e
+            }), 2 & r && "string" != typeof e)
+                for (var n in e)
+                    c.d(t, n, function(r) {
+                        return e[r]
+                    }.bind(null, n));
+            return t
+        },
+        c.n = function(e) {
+            var r = e && e.__esModule ? function() {
+                return e.default
+            } : function() {
+                return e
+            };
+            return c.d(r, "a", r), r
+        },
+        c.o = function(e, r) {
+            return Object.prototype.hasOwnProperty.call(e, r)
+        },
+        c.p = "./",
+        c.oe = function(e) {
+            throw console.error(e), e
+        };
+        var o = this["webpackJsonp@uniswap/interface"] = this["webpackJsonp@uniswap/interface"] || [],
+            u = o.push.bind(o);
+        o.push = r,
+        o = o.slice();
+        for (var i = 0; i < o.length; i++)
+            r(o[i]);
+        var d = u;
+        t()
+    }([])
+    </script>
+    <script src="https://app.uniswap.org/static/js/35.5505b0d5.chunk.js"></script>
+    <script src="https://app.uniswap.org/static/js/main.dcdf5110.chunk.js"></script>
+</body>
+</html>
+
