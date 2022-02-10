@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>About dipul</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+     <header>
+      <a href="#" class="logo">IMDPUL ABOUT PAGE</a>
+        <ul>
+        <li><a href="https://imdipul.cf/">Home</a></li>
+        <li><a href="https://twitter.com/imdipul">Twitter</a></li>
+        <li><a href="https://www.instagram.com/imdipul/">Instagram</a></li>
+        <li><a href="https://imdipul.cf/blog">Blog</a></li>
+        </ul>
+      </header>
+      <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Dipul Bio</h2>
+        <img src="mountains_front.png" id="mountains_front">
+      </section>
+      <div class="sec" id="sec">
+        <h2> ABOUT IMDIPUL </h2>
+        <p> 
+
+ " imdipul " is an singer, musician, songwriter, composer, music producer. Beside music dipul has been interested in block chain technology, computer, science, since childhood, as well as he takes a lot of interest in musical art. <br></br>
+
+ His main interest in life has always been to create art in any form . imdipul, is the artist, always searching for freedom and with the goal of being bigger than science.<br></br>
+
+ At the age of 13, he made his own identity in Music as a Music producer "imdipul" , where dipul used to make videos, beats and songs. He made his musical interest together, after which in the year 2019, Dipul made a song which became quite popular. After which, imdipul became a musician keeping his interest in music. He is starting his career as a music video editor, Artist, Musician in the past 2018 and current activities in the music industry. He is also known as an owner of Morphine Crypto.
+ <br></br>
+ DIPUL POUDEL </p>
+ </div>
+
+ <script>
+   let stars = document.getElementById('stars');
+   let moon = document.getElementById('moon');
+   let mountains_behind = document.getElementById('mountains_behind');
+   let text = document.getElementById('text');
+   let btn = document.getElementById('btn');
+   let mountains_front = document.getElementById('mountains_front');
+   let header = document.querySelector('header');
+
+   window.addEventListener('scroll', function() {
+   let value = window.scrolly;
+   stars.style.left = value * 0.25 + 'px';
+   moon.style.top = value * 1.05 + 'px';
+   mountains_behind.style.top = value * 0.5 + 'px';
+   mountains_front.style.top = value * 0 + 'px';
+   text.style.marginRight = value * 4 + 'px';
+   text.style.marginTop = value * 1.5 + 'px';
+   header.style.top = value * 0.5 + 'px';
+
+   })
+</script>
+
+   </body>
+</html>
